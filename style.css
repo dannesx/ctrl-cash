@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--bg-color: #002029;
+	--highlight: #ffea00;
+	--color: #f6f6f6;
+}
+
+body {
+	background: var(--bg-color);
+	color: var(--color);
+	display: grid;
+	grid-template-rows: 70px 1fr;
+	height: 100vh;
+	font-family: 'Rubik', sans-serif;
+}
+
+p,
+span {
+	font-size: 24px;
+	opacity: 0.8;
+}
+
+a {
+	color: var(--color);
+	text-decoration: none;
+}
+
+form {
+	border: 5px solid var(--highlight);
+	border-radius: 8px;
+	display: flex;
+}
+
+input,
+.button {
+	font-size: 18px;
+	padding: 16px 20px;
+	border: none;
+}
+
+input {
+	background: transparent;
+	color: var(--color);
+	position: relative;
+	max-width: 220px;
+}
+
+input::placeholder {
+	color: var(--color);
+	opacity: 0.4;
+}
+
+.button {
+	background: var(--highlight);
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--bg-color);
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 80px;
+	align-self: center;
+	align-items: center;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 40px;
+}
+
+main .value {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main .value h2 {
+	font-size: 6rem;
+}
+
+.ctrl-cash {
+	color: var(--highlight);
+}
+
+.conversion {
+	opacity: 0.3;
+	font-size: 14px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+@media (max-width: 800px) {
+	header {
+		padding: 0 40px;
+	}
+}
